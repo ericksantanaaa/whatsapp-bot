@@ -2,3 +2,5 @@ node_modules/
 dist/
 .wwebjs_auth/
 .wwebjs_cache/
+banco.db
+banco.db-journal
