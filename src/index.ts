@@ -30,9 +30,9 @@ client.on("message", async (message) => {
 
     client.sendMessage(
       remetente,
-      "▶️ Envios iniciados! 1 minuto para testes (sem repetições).",
+      "▶️ Envios iniciados!",
     );
-    const tempoEmMilissegundos = 15000;
+    const tempoEmMilissegundos = 300000;
 
     let filaDeIds: number[] = [];
 
@@ -42,7 +42,7 @@ client.on("message", async (message) => {
       const minuto = agora.getMinutes();
 
       const tempoAtual = hora * 60 + minuto;
-      const horarioInicio = 2 * 60; // 08:00 da manhã
+      const horarioInicio = 8 * 60; // 08:00 da manhã
       const horarioFim = 22 * 60 + 30; // 22:30 da noite
 
       if (tempoAtual < horarioInicio || tempoAtual > horarioFim) {
